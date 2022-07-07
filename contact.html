@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Trispace&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Very First Blog</h1>
+            <nav class="nav-links">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <div class="contact">
+                <h2>Contact</h2>
+                <div class="contact-flex">
+                    <section class="contact-info">
+                        <h3>How to contact me</h3>
+                        <p>Name: Kinga Hausel</p>
+                        <p>E-mail: <a href="mailto: hausel.kinga@gmail.com">hausel.kinga@gmail.com</a></p>
+                        <p>Phone: Send an owl, please.</p>
+                        <p>Address: Vengerberg, Aedirn</p>
+                    </section>
+                    <section class="send-message">
+                        <h3>Send a message</h3>
+                        <section>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name">
+                         </section>
+                         <section>
+                            <label for="email">E-mail:</label>
+                            <input type="text" id="email">
+                        </section>
+                        <section>
+                            <label for="phone">Phone:</label>
+                            <input type="text" id="phone">
+                        </section>
+                        <section id="exeption">
+                            <label for="message">Message:</label>
+                            <textarea id="message" cols="30" rows="10"></textarea>
+                        </section>
+                        <button class="submit">Submit</button>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+    <button class="info">?</button>
+</body>
+</html>

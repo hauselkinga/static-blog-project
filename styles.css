@@ -1,0 +1,251 @@
+/* universal */
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+
+body {
+    margin: 0;
+    background-image: url('images/background.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+/* header, navigation */
+header {
+    height: fit-content;
+    background-image: linear-gradient(to top, #1b1b1b 0,1%,  #6868ff 2%,  #AAF 65%);
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-family: 'Trispace', sans-serif;
+    line-height: 80px;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 2px 2px #424242;
+    letter-spacing: 4px;
+    display: block;
+    min-width:fit-content;
+}
+
+.nav-links {
+    width: 500px;
+    line-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    font-family: 'Trispace', sans-serif;
+    text-align: right;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px #424242;
+    letter-spacing: 4px;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.nav-links a:hover {
+    background-color: #AAF;
+}
+
+/* main, new post area */
+main {
+    margin-top: 180px;
+    padding: 0 10%;
+}
+
+.new-post, .about-section, .contact {
+    min-height: fit-content;
+    text-align: justify;
+    background-image: linear-gradient(#fff, #e4e4e4);
+    border: 2px solid #AAF;
+    border-radius: 6px;
+    padding: 20px 8%;
+    margin: 0 7% 100px;
+}
+
+.new-post h2, .about-section h2, .contact h2 {
+    font-family: 'Trispace', sans-serif;
+    font-size: 40px;
+    color: #AAF;
+    text-shadow: 1px 1px #424242;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.new-post label {
+    font-family: 'Trispace', sans-serif;
+    margin: 20px 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: #AAF;
+    text-shadow: 1px 1px #424242;
+}
+
+.submit {
+    padding: 10px 30px;
+    border: 4px solid #AAF;
+    border-radius: 10px;
+    background-color: #AAF;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px #424242;
+}
+
+.submit:active {
+    background-color: #6868ff;
+    border: 4px inset #AAF;
+}
+
+main input, textarea {
+    display: block;
+    margin: 20px 0;
+    min-width: 300px;
+    line-height: 24px;
+    border: 2px solid #AAF;
+    border-radius: 10px;
+    background-color: white;
+    resize: none;
+}
+
+main input:focus, textarea:focus {
+    outline: 2px solid #6868ff;
+    border: none;
+}
+
+.title {
+    height: 140px;
+}
+
+.content {
+    height: 320px;
+}
+
+#content {
+    width: 100%;
+}
+
+/* created posts */
+.post {
+    border: 2px solid #AAF;
+    background-image: linear-gradient(#fff, #e4e4e4);
+    margin: 40px 0;
+    padding: 20px;
+    text-align: justify;
+    position: relative;
+}
+
+.post p {
+    line-height: 24px;
+}
+
+.posted h1 {
+    color: #AAF;
+    text-shadow: 1px 1px #424242;
+    display: inline;
+    line-height: 120px;
+}
+
+img[src*="logo"] {
+    height: 120px;
+    display: inline;
+    position: absolute;
+    right: 20px;
+}
+
+/* information button */
+.info {
+    all: unset;
+    background-color: #AAF;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px #424242;
+    font-size: 60px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 26px;
+    right: 26px;
+    border: 4px solid #AAF;
+}
+
+.info:active {
+    background-color: #6868ff;
+    border: 4px inset #AAF;
+}
+
+/* overriding default text selection */
+::selection {
+    background: #AAF;
+}
+
+h1::selection, h2::selection, label::selection {
+    background: #9c9c9c;
+}
+
+/* contact.html */
+.contact-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    flex-grow: 1;
+}
+
+.send-message {
+    flex-grow: 2;
+}
+
+.send-message textarea {
+    width: 100%;
+}
+
+.send-message section {
+    height: 80px;
+}
+
+#exeption {
+    height: 300px;
+}
+
+.contact-flex h3 {
+    font-family: 'Trispace', sans-serif;
+    font-size: 26px;
+    color: #AAF;
+    text-shadow: 1px 1px #424242;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.contact-info a {
+    color: #6868ff;
+}
+
+.contact-info a:active {
+    color: #AAF;
+}
